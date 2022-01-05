@@ -1,17 +1,32 @@
 {
-  "name": "lab11",
+  "name": "student-crud-app101",
   "version": "1.0.0",
-  "description": "",
-  "main": "labtask.js",
+  "description": "Student CRUD App101",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node pm2.js",
+    "restart": "node pm2.js student-crud-app --update-env",
+    "dev": "nodemon server.js",
+    "sync": "node sync.js"
+  },
+  "author": "Fatima",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongodb": "^3.7.3",
+    "pm2": "^4.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "rsync": "^0.6.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fatimasatti/lab11.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/fatimasatti/lab11/issues"
   },
